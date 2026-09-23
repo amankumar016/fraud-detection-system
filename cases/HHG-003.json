@@ -1,0 +1,29 @@
+{
+  "case_id": "HHG-003",
+  "transaction_id": "3530164",
+  "customer_id": "C08623",
+  "card_id": "C08623-K2",
+  "trigger_type": "customer_report",
+  "risk_score": null,
+  "exposure_usd": 49.0,
+  "nba_before_additional_evidence": {
+    "action": "Apply Temporary Card Lock & Initiate Dispute Intake Interview",
+    "approval_route": "Tier 1 Fraud Analyst",
+    "justification": "Cardholder filed an explicit non-recognition dispute."
+  },
+  "nba_after_additional_evidence": {
+    "action": "Permanent Card Revocation, Reissue Card, and Process Reimbursement",
+    "approval_route": "Tier 2 Supervisor",
+    "justification": "Cardholder confirmed unauthorized use."
+  },
+  "investigation_findings": "Cardholder affirmed non-recognition of transaction 3530164. Prior customer history: 6 prior incidents.",
+  "identified_pattern": "card_not_present_fraud",
+  "outcome": "confirmed_fraud",
+  "actions_taken": [
+    "CREATE_CASE",
+    "BLOCK_CARD"
+  ],
+  "sar_required": false,
+  "sar_narrative": null,
+  "written_to_graph": false
+}

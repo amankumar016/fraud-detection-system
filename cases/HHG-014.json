@@ -1,0 +1,30 @@
+{
+  "case_id": "HHG-014",
+  "transaction_id": "3478561",
+  "customer_id": "C13487",
+  "card_id": "C13487-K1",
+  "trigger_type": "analyst_request",
+  "risk_score": null,
+  "exposure_usd": 0.0,
+  "nba_before_additional_evidence": {
+    "action": "Expand Graph Subgraph 2-Hops & Identify Cross-Card Device Collusion",
+    "approval_route": "Senior Fraud Intelligence Specialist",
+    "justification": "Syndicate device-sharing ring suspected across multiple accounts."
+  },
+  "nba_after_additional_evidence": {
+    "action": "Fleet Card Revocation, Device Blacklisting, and Regulatory Law Enforcement Filing",
+    "approval_route": "Compliance Director & Fraud Risk Committee",
+    "justification": "Graph confirmed multi-card syndication attack via matching device fingerprint."
+  },
+  "investigation_findings": "Multi-account graph linkage identified identical device fingerprint used across disparate cardholders.",
+  "identified_pattern": "undocumented",
+  "outcome": "confirmed_fraud",
+  "actions_taken": [
+    "CREATE_CASE",
+    "BLOCK_CARD",
+    "FILE_REPORT"
+  ],
+  "sar_required": true,
+  "sar_narrative": "**SAR Narrative**\n\n**Case:** HHG-014\n**Customer:** C13487\n**Card:** C13487-K1\n**Transaction:** 3478561\n**Exposure:** $0.00\n\nThis Suspicious Activity Report (SAR) is being filed regarding customer C13487 (Card: C13487-K1) under internal case HHG-014, due to the identification of a multi-account linkage indicative of potential fraud or account compromise.\n\nOn [Date of Detection, e.g., MM/DD/YYYY], our fraud detection systems identified a significant graph linkage between customer C13487 and multiple other, seemingly unrelated, cardholder accounts. Specifically, an identical unique device fingerprint was detected accessing and transacting across these disparate accounts, including activity associated with transaction 3478561 on C13487-K1. The linked accounts belong to individuals with different names, addresses, and other identifying information, suggesting an attempt to obscure common ownership or control.\n\nThe use of a single device to manage or access multiple accounts belonging to different individuals is highly indicative of potential synthetic identity fraud, account takeover attempts, or other fraudulent schemes designed to circumvent our security controls and potentially facilitate illicit financial activity.\n\nAt the time of filing, no direct financial loss has been identified for our institution related to this specific activity. However, the potential for future fraud and financial exposure is considered high given the nature of the linkage.\n\nUpon detection, the following actions were immediately taken: an internal case (HHG-014) was created for further investigation, card C13487-K1 was blocked to prevent further unauthorized activity, and this Suspicious Activity Report was prepared for filing. This report is filed to alert FinCEN to this suspicious pattern of activity involving potential fraud and account manipulation.",
+  "written_to_graph": false
+}

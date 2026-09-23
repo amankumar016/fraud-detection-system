@@ -1,0 +1,29 @@
+{
+  "case_id": "HHG-015",
+  "transaction_id": "3464869",
+  "customer_id": "C03042",
+  "card_id": "C03042-K1",
+  "trigger_type": "risk_score",
+  "risk_score": 0.77,
+  "exposure_usd": 599.94,
+  "nba_before_additional_evidence": {
+    "action": "Execute Out-of-Band Step-Up Authentication & SMS/Call Verification",
+    "approval_route": "Automated Rule Engine / Tier 1 Ops",
+    "justification": "High ML risk score of 0.77 exceeded operational threshold."
+  },
+  "nba_after_additional_evidence": {
+    "action": "Block Compromised Credential, Issue Replacement, and File Restitution",
+    "approval_route": "Tier 2 Supervisor",
+    "justification": "Cardholder confirmed absence of activity in flagged channel/region."
+  },
+  "investigation_findings": "Model risk score 0.77 elevated risk. Prior history shows 3 prior incidents.",
+  "identified_pattern": "card_not_present_fraud",
+  "outcome": "confirmed_fraud",
+  "actions_taken": [
+    "CREATE_CASE",
+    "BLOCK_CARD"
+  ],
+  "sar_required": false,
+  "sar_narrative": null,
+  "written_to_graph": false
+}

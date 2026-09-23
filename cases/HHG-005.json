@@ -1,0 +1,29 @@
+{
+  "case_id": "HHG-005",
+  "transaction_id": "3523199",
+  "customer_id": "C02923",
+  "card_id": "C02923-K1",
+  "trigger_type": "risk_score",
+  "risk_score": 0.54,
+  "exposure_usd": 100.07,
+  "nba_before_additional_evidence": {
+    "action": "Issue Push Verification Notification for Transaction Authentication",
+    "approval_route": "Tier 1 Ops",
+    "justification": "Moderate risk score 0.54 requires routine cardholder confirmation."
+  },
+  "nba_after_additional_evidence": {
+    "action": "Whitelisting Authorization & Close Alert as False Positive",
+    "approval_route": "Tier 1 Ops Lead",
+    "justification": "Cardholder validated legitimate transaction."
+  },
+  "investigation_findings": "Transaction cleared following positive verification against user baseline. Score 0.54 resolved.",
+  "identified_pattern": "none",
+  "outcome": "cleared",
+  "actions_taken": [
+    "VERIFY_WITH_CUSTOMER",
+    "CLOSE_NO_FRAUD"
+  ],
+  "sar_required": false,
+  "sar_narrative": null,
+  "written_to_graph": false
+}

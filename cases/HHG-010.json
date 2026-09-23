@@ -1,0 +1,30 @@
+{
+  "case_id": "HHG-010",
+  "transaction_id": "3506725",
+  "customer_id": "C10434",
+  "card_id": "C10434-K1",
+  "trigger_type": "risk_score",
+  "risk_score": 0.9,
+  "exposure_usd": 1000.03,
+  "nba_before_additional_evidence": {
+    "action": "Execute Out-of-Band Step-Up Authentication & SMS/Call Verification",
+    "approval_route": "Automated Rule Engine / Tier 1 Ops",
+    "justification": "High ML risk score of 0.9 exceeded operational threshold."
+  },
+  "nba_after_additional_evidence": {
+    "action": "Block Compromised Credential, Issue Replacement, and File Restitution",
+    "approval_route": "Tier 2 Supervisor",
+    "justification": "Cardholder confirmed absence of activity in flagged channel/region."
+  },
+  "investigation_findings": "Model risk score 0.9 elevated risk. Prior history shows 1 prior incidents.",
+  "identified_pattern": "card_not_present_fraud",
+  "outcome": "confirmed_fraud",
+  "actions_taken": [
+    "CREATE_CASE",
+    "BLOCK_CARD",
+    "FILE_REPORT"
+  ],
+  "sar_required": true,
+  "sar_narrative": "**SAR Narrative - Case HHG-010**\n\nThis SAR is being filed on customer C10434 (Customer ID: C10434) due to activity consistent with card-not-present (CNP) fraud. This activity is documented under internal case HHG-010.\n\nOn or about [Date of Transaction, if known], a single transaction (Transaction ID: 3506725) for $1,000.03 was processed using card C10434-K1, associated with customer C10434. The transaction was identified as a card-not-present (CNP) transaction.\n\nThe nature of this transaction, combined with other factors, raised suspicion of CNP fraud. The transaction triggered an elevated internal model risk score of 0.9 (on a scale of 0.0 to 1.0), indicating a high probability of fraudulent activity. Furthermore, customer C10434 has a prior history of one (1) previously reported suspicious incident, which further contributed to the elevated risk assessment. The institution's potential exposure related to this incident is $1,000.03.\n\nUpon identification of this suspicious activity, the institution took the following actions:\n1. An internal case, HHG-010, was immediately created for further investigation.\n2. Card C10434-K1 was blocked to prevent further unauthorized use.\n3. This Suspicious Activity Report is being filed in accordance with regulatory requirements.",
+  "written_to_graph": false
+}
