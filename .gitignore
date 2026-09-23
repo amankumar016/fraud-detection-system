@@ -1,0 +1,12 @@
+.env
+.env.*
+*.env
+venv/
+__pycache__/
+*.pyc
+.vscode/
+case_answers/
+*.zip
+lib/
+benchmark_results.csv
+batch_investigation_summary.csv
